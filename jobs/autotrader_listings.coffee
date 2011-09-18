@@ -1,4 +1,5 @@
 nodeio = require 'node.io'
+coffee = require 'coffee-script'
 busters = require '../lib/busters'
 
 @class = class ListingUrls extends busters.Job

@@ -1,3 +1,4 @@
+coffee = require 'coffee-script'
 busters = require '../lib/busters'
 
 @class = class ListingSearch extends busters.Job
