@@ -9,7 +9,7 @@ busters = require '../lib/busters'
       return @exit err if err?
       results = []
       $('.carlink').each (e) =>
-        results.push "http://www.autotrader.ca#{e.attribs.href}"
+        results.push "http://www.autotrader.ca#{escape e.attribs.href}"
       @emit results
 
     null

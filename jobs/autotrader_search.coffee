@@ -9,7 +9,7 @@ busters = require '../lib/busters'
     urls = [url]
     @getHtml url, (err, $) =>
       lastLink = $('div.Pager a').last()
-      href = "http://www.autotrader.ca#{lastLink.attribs.href}"
+      href = "http://www.autotrader.ca#{escape lastLink.attribs.href}"
 
       if match = RCS_RE.exec(href)
         lastRCS = parseInt(match[1], 10)
