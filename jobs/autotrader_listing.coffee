@@ -1,6 +1,8 @@
 nodeio = require 'node.io'
+coffee = require 'coffee-script'
+busters = require '../lib/busters'
 
-@class = class Listing extends nodeio.JobClass
+@class = class Listing extends busters.Job
   input: ["http://www.autotrader.ca/a/Mercedes-Benz/C-Class/MILLGROVE/Ontario/19_4430793_/"]
   run: (url) ->
     @getHtml url, (err, $) =>
@@ -55,4 +57,3 @@ nodeio = require 'node.io'
     null
 
 @job = new Listing()
-

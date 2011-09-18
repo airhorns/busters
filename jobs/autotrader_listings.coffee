@@ -1,6 +1,7 @@
 nodeio = require 'node.io'
+busters = require '../lib/busters'
 
-@class = class ListingUrls extends nodeio.JobClass
+@class = class ListingUrls extends busters.Job
   input: ["http://www.autotrader.ca/a/pv/Used/Mercedes-Benz/C-Class/MERCEDESBENZ+CCLASS/?cat2=7%2c11%2c9%2c10&prv=Ontario"]
   run: (url) ->
     @getHtml url, (err, $) =>
