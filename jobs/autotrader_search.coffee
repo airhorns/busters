@@ -16,7 +16,6 @@ busters = require '../lib/busters'
       else
         return @fail "Couldn't get the final RCS number!"
 
-      href = escape href
       for rcs in [25..lastRCS] by 25
         urls.push href.replace RCS_RE, "rcs=#{rcs}"
 
