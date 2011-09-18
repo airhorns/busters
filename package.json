@@ -1,0 +1,18 @@
+{
+  "author": "",
+  "name": "busters",
+  "description": "cheap lease transfers",
+  "version": "0.0.0",
+  "repository": {
+    "url": ""
+  },
+  "engines": {
+    "node": "~v0.4.11"
+  },
+  "dependencies": {
+    "coffee-script": ">=0.0.0",
+    "node.io": ">=0.0.0",
+    "mongoose": ">=0.0.0"
+  },
+  "devDependencies": {}
+}
