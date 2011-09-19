@@ -49,7 +49,7 @@ busters = require '../lib/busters'
       listingProperties.price = price
 
       @assert(listingProperties.price).isNumeric()
-      @assert(listingProperties.mileage).isNumeric()
+      #@assert(listingProperties.mileage).isNumeric()
       @assert(listingProperties.year).isNumeric()
       @assert(listingProperties.brand).notEmpty()
       @assert(listingProperties.model).notEmpty()
