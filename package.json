@@ -12,7 +12,8 @@
   "dependencies": {
     "coffee-script": ">=0.0.0",
     "node.io": ">=0.0.0",
-    "mongoose": ">=0.0.0"
+    "mongoose": ">=0.0.0",
+    "ent": ">0.0.0"
   },
   "devDependencies": {}
 }

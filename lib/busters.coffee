@@ -1,5 +1,6 @@
 mongoose = require 'mongoose'
 nodeio = require 'node.io'
+ent = require 'ent'
 
 mongoose.connect 'mongodb://localhost/busters'
 
@@ -17,6 +18,8 @@ ListingSchema = new mongoose.Schema
 
 exports.Listing = mongoose.model 'Listing', ListingSchema
 
+exports.linkify = (x) ->
+  escape ent.decode x
 exports.Job = class Job extends nodeio.JobProto
   constructor: ->
     super
